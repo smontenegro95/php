@@ -12,8 +12,8 @@ if(isset($_GET['ruta'])){
 }
 
 switch ($ruta){
-    case "agregar":
-            agregar();
+    case "agregar":            
+            agregar();          
     break;
     case "vistaAgregar":
             vistaAgregar();
@@ -32,7 +32,13 @@ switch ($ruta){
     break;
     case "vistaActualizar":
         vistaActualizar();
+    break;
+    case "cancelarActualizar":
+        cancelarActualizar();
     break;    
+    case "cancelar":
+        cancelar();
+    break;
 }
 
 ///funciones
@@ -69,6 +75,9 @@ function agregar(){
 
     }
 
+}
+function cancelar(){
+    header("Location:principal.php");
 }
 
 function buscar($buscar){
@@ -133,6 +142,8 @@ function actualizar(){
 
     header("Location:controlador.php?ruta=vistaActualizar");
 }
+
+
 function confirmarActualizar(){
     if(isset($_GET['cedula'])){
         $cedula = $_GET['cedula'];
@@ -158,6 +169,12 @@ function confirmarActualizar(){
     fclose($recurso);
     header("Location:controlador.php?ruta=listar");
 }
+
+
 function vistaActualizar(){
     header("Location:vistaActualizar.php");
+}
+
+function cancelarActualizar(){
+    header("Location:controlador.php?ruta=listar");
 }

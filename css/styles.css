@@ -1,6 +1,13 @@
+:root{
+    --fontf-title: 'Fjalla One', sans-serif;
+    --font-general: 'Source Sans Prop', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: var(--font-general);
 }
 .header{
     background-color: #026fff;
@@ -24,16 +31,31 @@
 .header .menu ul li a:hover{
     background-color: rgba(0,0,0,0.2);
 }
-
+h1,h2{
+    margin: 20px 20px;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
+table{
+    margin-left: 50px;
+    /* margin-top: 50px; */
+}
 table, th,td{
     border: 1px solid black;
     border-collapse: collapse;
 }
 table th{
     text-align: left;
+    padding: 5px;
+    font-family: var(--fontf-title);
 }
 table td{
     padding: 5px;
+    font-family: var(--font-general);
 }
 table td input{
     border: none;
@@ -45,4 +67,15 @@ input::-webkit-inner-spin-button{
 }
 input[type="number"]{
     -moz-appearance:textfield;
+}
+button{
+    border: none;
+    padding: 5px;
+    background-color: #026fff;
+    color: white;
+    font-weight: 600;
+}
+button:hover{
+    color: #026fff;
+    background-color: white;
 }

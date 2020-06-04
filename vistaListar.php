@@ -45,7 +45,7 @@
                 <?php for($i = 0; $i<$totalReg; $i++){?>
                 <tr>
                     <td><?php echo $i+1; ?></td>
-                    <td><?php echo $pintarRegistro[$i]['ced'];$cedula = $pintarRegistro[$i]['ced'];?></td>
+                    <td><?php echo $pintarRegistro[$i]['ced']; $cedula = $pintarRegistro[$i]['ced'];?></td>
                     <td><?php echo $pintarRegistro[$i]['nom'];?></td>
                     <td><?php echo $pintarRegistro[$i]['correo'];?></td>
                     <td><?php echo $pintarRegistro[$i]['telf'];?></td>
