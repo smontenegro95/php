@@ -21,9 +21,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <?php 
+            include 'header.php';
+        ?>
         <div>
             <h1>EJERCICIO PARA APROPIAR FUNDAMENTOS DEL LENGUAJE PHP</h1>
-            <table border="1">
+            <table>
                 <tr>
                     <th colspan="9">
                         LISTADO
@@ -53,7 +56,6 @@
                 <?php }?>
             </table>
             <br><br>
-            <a href="principal.php">Volver a principal</a>
         </div>
     </body>
 </html>

@@ -13,6 +13,9 @@ if(isset($_SESSION['mensaje'])){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <?php
+            include 'header.php'
+        ?>
         <div>
             <center>
                 <h3>PROYECTO PARA INTRODUCCIÓN Y APROPIACIÓN DE FUNDAMENTOS DEL LENGUAJE PHP</h3>
@@ -25,7 +28,7 @@ if(isset($_SESSION['mensaje'])){
                     <!--<a href="controlador.php?ruta=del">Borrar Registro</a><br>-->      
                     <a href="controlador.php?ruta=listar">Listado Completo</a><br>  
                     <a href="">Total de Registros</a><br><br><br>
-                    <a href="controlador.php?ruta=salir.php">Cerrar</a>
+                    <!-- <a href="controlador.php?ruta=salir.php">Cerrar</a> -->
                 </fieldset>
             </center>
         </div>

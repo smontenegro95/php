@@ -14,17 +14,20 @@
     <title>Document</title>
 </head>
 <body>
+    <?php 
+        include 'header.php';
+    ?>
     <div>
         <h1>EJERCICIO PARA APROPIAR FUNDAMENTOS DEL LENGUAJE PHP</h1>
         <h2>Formulario de actualizar registro</h2>
         <form action="controlador.php" method="GET">
-            <table border="1"> 
+            <table> 
                 <tr><td>Cédula</td><td><input type="number" name="cedula" readonly="readonly" value=<?php if(isset($cedula)){echo $cedula;}?>></td></tr>
                 <tr><td>Nombre</td><td><input type="text" name="nombre" value=<?php if(isset($nombre)){echo $nombre;}?>></td></tr>
                 <tr><td>Correo</td><td><input type="email" name="correo" value=<?php if(isset($correo)){echo $correo;}?>></td></tr>
                 <tr><td>Teléfono fijo</td><td><input type="number" name="telf" value=<?php if(isset($telf)){echo $telf;}?>></td></tr>
                 <tr><td>Teléfono móvil</td><td><input type="number" name="telm" value=<?php if(isset($telm)){echo $telm;}?>></td></tr>
-                <tr><td colspan="2" align="right">cancelarActualizar
+                <tr><td colspan="2" align="center">
                     <button type="submit" name="ruta" value="cancelarActualizar">CANCELAR</button>
                     <button type="submit" name="ruta" value="confirmarActualizar">ACTUALIZAR</button>
                 </td></tr>
