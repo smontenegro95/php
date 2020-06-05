@@ -71,11 +71,33 @@ input[type="number"]{
 button{
     border: none;
     padding: 5px;
-    background-color: #026fff;
-    color: white;
-    font-weight: 600;
+    background-color: white;
+    border: 1px solid #026fff;
+    color: #026fff;
+    border-radius: 5px;
 }
 button:hover{
+    color: white;
+    background-color: #026fff;
+}
+
+fieldset{
+    width: 20%;
+    padding: 20px;
+    margin-top: 20px;
+}
+fieldset a{
     color: #026fff;
-    background-color: white;
+    text-decoration: none;
+    border: 1px solid #026fff;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+fieldset a:hover{
+    color: white;
+    background-color: #026fff;
+}
+.contenedor{
+    margin-top: 20px;
 }

@@ -16,19 +16,14 @@ if(isset($_SESSION['mensaje'])){
         <?php
             include 'header.php'
         ?>
-        <div>
+        <div class="contenedor">
             <center>
                 <h3>PROYECTO PARA INTRODUCCIÓN Y APROPIACIÓN DE FUNDAMENTOS DEL LENGUAJE PHP</h3>
-                <fieldset style="width: 15%"><legend>ADMINISTRACIÓN DE REGISTROS (Archivo Plano)</legend>
+                <fieldset><legend>ADMINISTRACIÓN DE REGISTROS (Archivo Plano)</legend>
                     <br>
                     <br>
-                    <a href="controlador.php?ruta=vistaAgregar">Añadir Registro</a><br>
-                    <!--<a href="controlador.php?ruta=buscar">Buscar Registro</a><br>-->
-                    <!--<a href="controlador.php?ruta=modificar">Modificar Registro</a><br>-->
-                    <!--<a href="controlador.php?ruta=del">Borrar Registro</a><br>-->      
+                    <a href="controlador.php?ruta=vistaAgregar">Añadir Registro</a>  
                     <a href="controlador.php?ruta=listar">Listado Completo</a><br>  
-                    <a href="">Total de Registros</a><br><br><br>
-                    <!-- <a href="controlador.php?ruta=salir.php">Cerrar</a> -->
                 </fieldset>
             </center>
         </div>
