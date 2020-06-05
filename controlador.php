@@ -62,7 +62,7 @@ function agregar(){
         $recurso = fopen("planoI.txt","a+");
         fwrite($recurso,$registro);
         fclose($recurso);
-        $mensecont1 = "<script>alert(\"Registro insertado\");location.href=\"principal.php\"</script>";
+        $mensecont1 = "<script>alert(\"Registro insertado\");location.href=\"controlador.php?ruta=listar\"</script>";
         session_start();
         $_SESSION['mensaje']=$mensecont1;
         header("location:principal.php");
